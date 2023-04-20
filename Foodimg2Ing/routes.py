@@ -6,7 +6,7 @@ import os
 
 @app.route('/',methods=['GET'])
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/about',methods=['GET'])
 def about():
