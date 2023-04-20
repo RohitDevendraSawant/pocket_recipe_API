@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block home %}
+
+
+            <div id="info" class="col-md-8">
+                <div class="card m-3">
+                    <img src="{{ url_for('static',filename='images/cover.jpeg')}}" class="card-img-top" alt="..." >
+                    <div class="card-body" >
+                      <p>Recipe Generation from Food Image</p>
+                      <p>Processing time : Approx 30s</></p>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div id="loading" style="display:none;" class="col-md-8">
+                <div class="loader">
+                    <div class="inner one"></div>
+                    <div class="inner two"></div>
+                    <div class="inner three"></div>
+                    <h4 style="color:white;"><center>Loading.........</center></h4>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+{% endblock home %}

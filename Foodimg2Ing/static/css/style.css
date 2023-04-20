@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    height:900px;
+    background-image: linear-gradient(30deg,white,black);
+}
+/* Header */
+#Section-1{
+  background:#f5f5f5 ;
+}
+#Section-1 a{
+  font-family: cursive;
+  font-size: large;
+}
+
+#buttonsample{
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #87ceeb;
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+/* Info */
+#info{
+  margin-top:-1rem;
+  margin-bottom: 1rem;
+}
+
+#infotitle{
+  font-family: cursive;
+  font-size: x-large;
+  font-weight: bold;
+}
+#infobody{
+  padding-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* about */
+#section-about{
+margin-top: 20px;
+margin-left: 60px;
+margin-right: 60px;
+
+}
+#aboutcard{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.title{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.aboutcontent{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: medium;
+}
+
+
+/* Modal */
+
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 80%;
+    margin: 1.75rem auto;
+}
+}
+
+.container .wrapper{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 100px;
+  color: #9658fe;
+}
+.wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #5B5B7B;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #9658fe;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #000000;
+  display: none;
+  background-color: #87ceeb;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  margin-top: 20px;
+  margin-left: 45px;
+  display: block;
+  width: 75%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #87ceeb;
+}
+
