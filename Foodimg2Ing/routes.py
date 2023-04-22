@@ -9,7 +9,7 @@ def home():
     # return render_template('index.html')
     return jsonify({'message':"Welcome to pocket recipe API"})
 
-@app.route('/',methods=['POST','GET'])
+@app.route('upload/',methods=['POST','GET'])
 def predict():
     imagefile=request.files['image']
     image_path=os.path.join(app.root_path,'static\\images',imagefile.filename)
